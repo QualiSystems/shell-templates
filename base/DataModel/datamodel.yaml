@@ -1,0 +1,14 @@
+model_name: SW1002
+model_description: Test 
+custom_attributes:
+	- name: CustomerAtt 
+	  default_value: "1"
+	  allowed_values: "1,2,3"
+	  description: "This is a custom attribute"
+	- name: User 
+	  description: Log in user 
+	- name: Password
+	  custom_type: Password
+	  desription: Log in Password
+
+

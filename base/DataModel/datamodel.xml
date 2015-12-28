@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataModelInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.qualisystems.com/ResourceManagement/DataModelSchema.xsd">
+  <Attributes>
+    <AttributeInfo Name="booleanAtt" Type="Boolean" DefaultValue="False" IsReadOnly="false">
+      <Rules />
+    </AttributeInfo>
+    <AttributeInfo xsi:type="LookupAttributeDetails" Name="lookupAtt" Type="Lookup" DefaultValue="b" IsReadOnly="false">
+      <Rules />
+      <LookupValues>
+        <LookupValue NumericValue="0" StringValue="a" />
+        <LookupValue NumericValue="1" StringValue="b" />
+        <LookupValue NumericValue="2" StringValue="c" />
+      </LookupValues>
+    </AttributeInfo>
+    <AttributeInfo Name="numericAtt" Type="Numeric" DefaultValue="0" IsReadOnly="false">
+      <Rules />
+    </AttributeInfo>
+    <AttributeInfo Name="passwordAtt" Type="Password" DefaultValue="3M3u7nkDzxWb0aJ/IZYeWw==" IsReadOnly="false">
+      <Rules />
+    </AttributeInfo>
+    <AttributeInfo Name="stringAtt" Type="String" DefaultValue="" IsReadOnly="false">
+      <Rules>
+        <Rule Name="Configuration" />
+        <Rule Name="Setting" />
+      </Rules>
+    </AttributeInfo>
+  </Attributes>
+  <ResourceFamilies>
+    <ResourceFamily Name="Generic Resource" IsConnectable="true" IsLockedByDefault="true" IsSearchable="true">
+      <AttachedAttributes />
+      <AttributeValues />
+      <Models>
+        <ResourceModel Name="Generic Resource Model" SupportsConcurrentCommands="false">
+          <AttachedAttributes>
+            <AttachedAttribute Name="booleanAtt" IsOverridable="true" IsLocal="true">
+              <AllowedValues />
+            </AttachedAttribute>
+            <AttachedAttribute Name="lookupAtt" IsOverridable="true" IsLocal="true">
+              <AllowedValues />
+            </AttachedAttribute>
+            <AttachedAttribute Name="numericAtt" IsOverridable="true" IsLocal="true">
+              <AllowedValues />
+            </AttachedAttribute>
+            <AttachedAttribute Name="passwordAtt" IsOverridable="true" IsLocal="true">
+              <AllowedValues />
+            </AttachedAttribute>
+            <AttachedAttribute Name="stringAtt" IsOverridable="true" IsLocal="true">
+              <AllowedValues />
+            </AttachedAttribute>
+          </AttachedAttributes>
+          <AttributeValues>
+            <AttributeValue Name="booleanAtt" Value="False" />
+            <AttributeValue Name="lookupAtt" Value="b" />
+            <AttributeValue Name="numericAtt" Value="0" />
+            <AttributeValue Name="passwordAtt" Value="3M3u7nkDzxWb0aJ/IZYeWw==" />
+            <AttributeValue Name="stringAtt" Value="" />
+          </AttributeValues>
+          <ParentModels />
+          <Drivers>
+            <DriverName>Generic Resource Driver</DriverName>
+          </Drivers>
+          <Scripts />
+        </ResourceModel>
+      </Models>
+      <Categories />
+    </ResourceFamily>
+  </ResourceFamilies>
+  <DriverDescriptors>
+    <DriverDescriptor Name="Generic Resource Driver" Description="A resource driver for exposing automation to end users, for example to retrieve information or update resource properties. Can include inventory operations functionality ('Auto Load' and 'Sync from device') for the selected resource." DriverType="TestShellDriver" />
+  </DriverDescriptors>
+  <ScriptDescriptors />
+</DataModelInfo>
