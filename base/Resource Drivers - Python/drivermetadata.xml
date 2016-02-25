@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Driver Name="Sample driver" Version="1.0.0" MainClass="sampleresourcedriver.SampleResourceDriver" Description="driver description">
+<Driver Name="Sample Driver" Version="1.0.0" MainClass="sampleresourcedriver.SampleResourceDriver" Description="driver description">
   <Layout>
     <Category Name="Management">
       <Command Name="example_command" DisplayName="Example Command" Description="an example command" Tags="remote_virtualization">

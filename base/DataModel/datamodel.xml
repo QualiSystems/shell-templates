@@ -1,63 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DataModelInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.qualisystems.com/ResourceManagement/DataModelSchema.xsd">
+<DataModelInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.qualisystems.com/ResourceManagement/DataModelSchema.xsd">
   <Attributes>
-    <AttributeInfo Name="booleanAtt" Type="Boolean" DefaultValue="False" IsReadOnly="false">
-      <Rules />
-    </AttributeInfo>
-    <AttributeInfo xsi:type="LookupAttributeDetails" Name="lookupAtt" Type="Lookup" DefaultValue="b" IsReadOnly="false">
-      <Rules />
-      <LookupValues>
-        <LookupValue NumericValue="0" StringValue="a" />
-        <LookupValue NumericValue="1" StringValue="b" />
-        <LookupValue NumericValue="2" StringValue="c" />
-      </LookupValues>
-    </AttributeInfo>
-    <AttributeInfo Name="numericAtt" Type="Numeric" DefaultValue="0" IsReadOnly="false">
-      <Rules />
-    </AttributeInfo>
-    <AttributeInfo Name="passwordAtt" Type="Password" DefaultValue="3M3u7nkDzxWb0aJ/IZYeWw==" IsReadOnly="false">
-      <Rules />
-    </AttributeInfo>
-    <AttributeInfo Name="stringAtt" Type="String" DefaultValue="" IsReadOnly="false">
-      <Rules>
-        <Rule Name="Configuration" />
-        <Rule Name="Setting" />
-      </Rules>
-    </AttributeInfo>
+      <AttributeInfo Name="User" Type="String" DefaultValue="" IsReadOnly="false">
+        <Rules>
+          <Rule Name="Configuration" />
+        </Rules>
+      </AttributeInfo>
+      <AttributeInfo Name="Password Image" Type="Password" DefaultValue="" IsReadOnly="false">
+        <Rules>
+          <Rule Name="Configuration" />
+        </Rules>
+      </AttributeInfo>
   </Attributes>
   <ResourceFamilies>
-    <ResourceFamily Name="Generic Resource" IsConnectable="true" IsLockedByDefault="true" IsSearchable="true">
-      <AttachedAttributes />
-      <AttributeValues />
+    <ResourceFamily Name="Generic Resource" IsConnectable="true" IsLockedByDefault="true" Description="" IsSearchable="true" ResourceType="Resource">
+      <AttachedAttributes>
+      </AttachedAttributes>
+      <AttributeValues>
+      </AttributeValues>
       <Models>
-        <ResourceModel Name="Generic Resource Model" SupportsConcurrentCommands="false">
+        <ResourceModel Name="Shell Model" Description="" SupportsConcurrentCommands="true">
           <AttachedAttributes>
-            <AttachedAttribute Name="booleanAtt" IsOverridable="true" IsLocal="true">
+               <AttachedAttribute IsLocal="true" IsOverridable="true" Name="User">
               <AllowedValues />
             </AttachedAttribute>
-            <AttachedAttribute Name="lookupAtt" IsOverridable="true" IsLocal="true">
-              <AllowedValues />
-            </AttachedAttribute>
-            <AttachedAttribute Name="numericAtt" IsOverridable="true" IsLocal="true">
-              <AllowedValues />
-            </AttachedAttribute>
-            <AttachedAttribute Name="passwordAtt" IsOverridable="true" IsLocal="true">
-              <AllowedValues />
-            </AttachedAttribute>
-            <AttachedAttribute Name="stringAtt" IsOverridable="true" IsLocal="true">
-              <AllowedValues />
-            </AttachedAttribute>
+              <AttachedAttribute IsLocal="true" IsOverridable="true" Name="Password" >
+                <AllowedValues />
+              </AttachedAttribute>
           </AttachedAttributes>
           <AttributeValues>
-            <AttributeValue Name="booleanAtt" Value="False" />
-            <AttributeValue Name="lookupAtt" Value="b" />
-            <AttributeValue Name="numericAtt" Value="0" />
-            <AttributeValue Name="passwordAtt" Value="3M3u7nkDzxWb0aJ/IZYeWw==" />
-            <AttributeValue Name="stringAtt" Value="" />
+              <AttributeValue Name="User" Value="" />
+              <AttributeValue Name="Password" Value="" />
           </AttributeValues>
-          <ParentModels />
+          <ParentModels>
+          </ParentModels>
           <Drivers>
-            <DriverName>Generic Resource Driver</DriverName>
+              <DriverName>Sample Driver</DriverName>
           </Drivers>
           <Scripts />
         </ResourceModel>
@@ -66,7 +44,6 @@
     </ResourceFamily>
   </ResourceFamilies>
   <DriverDescriptors>
-    <DriverDescriptor Name="Generic Resource Driver" Description="A resource driver for exposing automation to end users, for example to retrieve information or update resource properties. Can include inventory operations functionality ('Auto Load' and 'Sync from device') for the selected resource." DriverType="TestShellDriver" />
+      <DriverDescriptor Name="Sample Driver" DriverType="PythonDriver" />
   </DriverDescriptors>
-  <ScriptDescriptors />
 </DataModelInfo>
