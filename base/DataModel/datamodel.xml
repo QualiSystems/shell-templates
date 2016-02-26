@@ -35,7 +35,7 @@
           <ParentModels>
           </ParentModels>
           <Drivers>
-              <DriverName>Genericshell Driver</DriverName>
+              <DriverName>GenericShell Driver</DriverName>
           </Drivers>
           <Scripts />
         </ResourceModel>
