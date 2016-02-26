@@ -2,7 +2,7 @@
 from cloudshell.shell.core.resource_driver_interface import ResourceDriverInterface
 
 
-class GenericshellDriver (ResourceDriverInterface):
+class BaseShellDriver (ResourceDriverInterface):
     
     def __init__(self):
         pass
