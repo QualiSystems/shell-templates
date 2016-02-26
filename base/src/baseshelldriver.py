@@ -10,7 +10,7 @@ class BaseShellDriver (ResourceDriverInterface):
     # Initialize the driver session, this function is called everytime a new instance of the driver is created
     # This is a good place to load and cache the driver configuration, initiate sessions etc.
     def initialize(self, context):              
-        """
+        """ 
         :type context: cloudshell.shell.core.driver_context.InitCommandContext
         """
         return 'Finished initializing'
