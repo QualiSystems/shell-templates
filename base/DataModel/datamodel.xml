@@ -19,7 +19,7 @@
       <AttributeValues>
       </AttributeValues>
       <Models>
-        <ResourceModel Name="Genericshell" Description="" SupportsConcurrentCommands="true">
+        <ResourceModel Name="BaseShell" Description="" SupportsConcurrentCommands="true">
           <AttachedAttributes>
                <AttachedAttribute IsLocal="true" IsOverridable="true" Name="User">
               <AllowedValues />
@@ -44,6 +44,6 @@
     </ResourceFamily>
   </ResourceFamilies>
   <DriverDescriptors>
-      <DriverDescriptor Name="Genericshell Driver" DriverType="PythonDriver" />
+      <DriverDescriptor Name="BaseShell Driver" DriverType="PythonDriver" />
   </DriverDescriptors>
 </DataModelInfo>
