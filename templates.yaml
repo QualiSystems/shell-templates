@@ -1,0 +1,5 @@
+templates:
+    - name: base
+      description: Basic shell template for any device
+    - name: switch
+      description: A shell template for a switch which supports VLAN and autoload
