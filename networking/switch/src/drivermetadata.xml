@@ -1,20 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Driver Name="SwitchShell Driver" Version="1.0.0" MainClass="switchshelldriver.SwitchShellDriver" Description="Driver description">
   <Layout>
-    <Category Name="Samples">
-      <Command Name="example_command" DisplayName="Example Command" Description="an example command">
-        <Parameters>
-          <Parameter Name="user_param1" Type="String" Mandatory = "False" DefaultValue="default" DisplayName="First Input" Description="Please specify a value here"/>
-          <Parameter Name="user_param2" Type="Lookup" Mandatory = "True" DefaultValue="Yes" AllowedValues="Yes,No" DisplayName="Second Input" Description="Just another parameter"/>
-        </Parameters>
-      </Command>
-      <Command Name="example_command_with_cancellation" DisplayName="Another Example" Description="an example command">
-        <Parameters>
-          <Parameter Name="user_param1" Type="String" Mandatory = "False" DefaultValue="" DisplayName="Some Input" Description="Please specify a value here"/>
-        </Parameters>
-      </Command>
-    </Category>
     <Category Name="Hidden Commands">
+
+      <Command Name="add_vlan" DisplayName="Add VLAN" Description="" Tags="remote_connectivity">
+        <Parameters>
+          <Parameter Name="VLAN_Ranges" Type="String" Mandatory = "True" DefaultValue="" DisplayName="First Input" Description=""/>
+          <Parameter Name="VLAN_Mode" Type="String" Mandatory = "True" DefaultValue="Access" AllowedValues="Access,Trunk" DisplayName="Mode" Description="r"/>
+          <Parameter Name="additional_info" Type="String" Mandatory = "False" DefaultValue="" AllowedValues="" DisplayName="" Description=""/>
+          <Parameter Name="qnq" Type="String" Mandatory = "False" DefaultValue="" AllowedValues="" DisplayName="" Description=""/>
+          <Parameter Name="ctag" Type="String" Mandatory = "False" DefaultValue="" AllowedValues="" DisplayName="" Description=""/>
+        </Parameters>
+      </Command>
+
+      <Command Name="remove_vlan" DisplayName="Remove VLAN" Description="" Tags="remote_connectivity">
+        <Parameters>
+          <Parameter Name="VLAN_Ranges" Type="String" Mandatory = "True" DefaultValue="" DisplayName="First Input" Description=""/>
+          <Parameter Name="VLAN_Mode" Type="String" Mandatory = "True" DefaultValue="Access" AllowedValues="Access,Trunk" DisplayName="Mode" Description="r"/>
+          <Parameter Name="additional_info" Type="String" Mandatory = "False" DefaultValue="" AllowedValues="" DisplayName="" Description=""/>
+          <Parameter Name="qnq" Type="String" Mandatory = "False" DefaultValue="" AllowedValues="" DisplayName="" Description=""/>
+          <Parameter Name="ctag" Type="String" Mandatory = "False" DefaultValue="" AllowedValues="" DisplayName="" Description=""/>
+        </Parameters>
+      </Command>
+
       <!-- All the commands listed under the "hidden commands" category will not be visible in the user interface, you can still call them from automation -->
     </Category>
   </Layout>

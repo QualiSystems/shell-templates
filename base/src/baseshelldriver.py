@@ -23,7 +23,7 @@ class BaseShellDriver (ResourceDriverInterface):
     # An example command
     def example_command(self, context, user_param1, user_param2):
         """
-        :param context: cloudshell.shell.core.driver_context..ResourceCommandContext
+        :type context: cloudshell.shell.core.driver_context.ResourceCommandContext
         """   
         result = self._helper_method(user_param1)
         return result
@@ -31,7 +31,7 @@ class BaseShellDriver (ResourceDriverInterface):
     # An example command that that supports cancellation
     def example_command_with_cancellation(self, context, cancellation_token, user_param1):
         """
-        :type context: cloudshell.shell.core.driver_context..ResourceCommandContext
+        :type context: cloudshell.shell.core.driver_context.ResourceCommandContext
         :type cancellation_token: cloudshell.shell.core.driver_context.CancellationContext
         """
         result = self._helper_method(user_param1)
