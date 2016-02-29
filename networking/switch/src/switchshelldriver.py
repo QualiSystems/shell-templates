@@ -3,15 +3,13 @@ from cloudshell.shell.core.resource_driver_interface import ResourceDriverInterf
 from cloudshell.networking.networking_resource_driver_interface import NetworkingResourceDriverInterface
 
 
-
-class SwitchShellDriver (ResourceDriverInterface, NetworkingResourceDriverInterface):
-
+class SwitchShellDriver(ResourceDriverInterface, NetworkingResourceDriverInterface):
     def __init__(self):
         pass
 
     # Initialize the driver session, this function is called everytime a new instance of the driver is created
     # This is a good place to load and cache the driver configuration, initiate sessions etc.
-    def initialize(self, context):              
+    def initialize(self, context):
         """
         :type context: cloudshell.shell.core.driver_context.InitCommandContext
         """
@@ -22,16 +20,18 @@ class SwitchShellDriver (ResourceDriverInterface, NetworkingResourceDriverInterf
     def cleanup(self):
         pass
 
-    def remove_vlan(self, context, port, VLAN_Ranges, VLAN_Mode, additional_info='', qnq='', ctag=''):
+    def remove_vlan(self, context, ports, VLAN_Ranges, VLAN_Mode, additional_info='', qnq='', ctag=''):
         """
         :type context: cloudshell.shell.core.driver_context.ResourceRemoteCommandContext
         """
         raise NotImplementedError()
 
-    def add_vlan(self, context, port, VLAN_Ranges, VLAN_Mode, additional_info='', qnq='', ctag=''):
+    def add_vlan(self, context, ports, VLAN_Ranges, VLAN_Mode, additional_info='', qnq='', ctag=''):
         """
-        :type context: cloudshell.shell.core.driver_context.ResourceRemoteCommandContext
+        :param cloudshell.shell.core.driver_context.ResourceRemoteCommandContext context: context information object
+         created on execution by cloudshell
         """
+
         raise NotImplementedError()
 
     def get_inventory(self, context):
@@ -93,7 +93,10 @@ class SwitchShellDriver (ResourceDriverInterface, NetworkingResourceDriverInterf
     def save(self, context, folder_path, configuration_type):
         """
         :type context: cloudshell.shell.core.driver_context.ResourceCommandContext
+        :rtype
         """
+        # filename = '<FILENAME>,'
+        # return filename
         raise NotImplementedError()
 
     def shutdown(self):
