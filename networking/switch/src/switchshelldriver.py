@@ -51,7 +51,6 @@ class SwitchShellDriver(ResourceDriverInterface, NetworkingResourceDriverInterfa
         #       AutoLoadAttribute('1', 'Model', 'WS-X4232-GB-RJ'),
         #       AutoLoadAttribute('1/1', 'Model', 'WS-X4233-GB-EJ'),
         #       AutoLoadAttribute('1/1', 'Serial Number', 'RVE056702UD'),
-        #       AutoLoadAttribute('1/1/1', 'Mac_Address', 'fe80::e10c:f055:f7f1:bb7t16'),
         #       AutoLoadAttribute('1/1/1', 'IPv4 Address', '192.168.10.7')
         # ]
         #
