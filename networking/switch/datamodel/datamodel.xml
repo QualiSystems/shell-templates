@@ -336,7 +336,7 @@
           </AttributeValues>
           <ParentModels />
           <Drivers>
-		<DriverName>Switch Driver</DriverName>
+		<DriverName>SwitchShell Driver</DriverName>
 	  </Drivers> 
           <Scripts />
         </ResourceModel>
