@@ -134,7 +134,7 @@
         <Rule Name="Configuration" />
       </Rules>
     </AttributeInfo>
-    <AttributeInfo Name="Console Port" Type="Numeric" DefaultValue="" IsReadOnly="false">
+    <AttributeInfo Name="Console Port" Type="Numeric" DefaultValue="0" IsReadOnly="false">
       <Rules>
         <Rule Name="Configuration" />
       </Rules>
@@ -191,7 +191,7 @@
 	<Rule Name="Available For Abstract Resources" />
       </Rules>
     </AttributeInfo>
-    <AttributeInfo Name="Bandwidth" Type="Numeric" DefaultValue="" IsReadOnly="true">
+    <AttributeInfo Name="Bandwidth" Type="Numeric" DefaultValue="0" IsReadOnly="true">
       <Rules>
         <Rule Name="Configuration" />
 	<Rule Name="Setting" />
