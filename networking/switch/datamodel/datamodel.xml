@@ -330,7 +330,7 @@
             <AttributeValue Name="Console Server IP Address" Value="" />
             <AttributeValue Name="Console User" Value="" />
             <AttributeValue Name="Console Password" Value="3M3u7nkDzxWb0aJ/IZYeWw==" />
-            <AttributeValue Name="Console Port" Value="" />
+            <AttributeValue Name="Console Port" Value="0" />
             <AttributeValue Name="CLI Connection Type" Value="Auto" />
             <AttributeValue Name="Power Management" Value="False" />
           </AttributeValues>
@@ -361,8 +361,7 @@
           <AttributeValue Name="Serial Number" Value="" />
         </AttributeValues>
 			<ParentModels>
-				<ParentModelName>Vendor OS Switch</ParentModelName>
-				<ParentModelName>Vendor OS Router</ParentModelName>
+				<ParentModelName>SwitchShell</ParentModelName>
 			</ParentModels>
 			<Drivers />
 			<Scripts />
@@ -446,7 +445,7 @@
 			<AttributeValue Name="IPv4 Address" Value="" />
 			<AttributeValue Name="IPv6 Address" Value="" />
 			<AttributeValue Name="Port Description" Value="" />
-			<AttributeValue Name="Bandwidth" Value="" />
+			<AttributeValue Name="Bandwidth" Value="0" />
 			<AttributeValue Name="MTU" Value="0" />
 			<AttributeValue Name="Duplex" Value="Half" />
 			<AttributeValue Name="Protocol Type" Value="Transparent" />
@@ -558,8 +557,7 @@
 			<AttributeValue Name="Protocol Type" Value="Transparent" />
         </AttributeValues>
           <ParentModels>
-            <ParentModelName>Vendor OS Switch</ParentModelName>
-            <ParentModelName>Vendor OS Router</ParentModelName>
+            <ParentModelName>SwitchShell</ParentModelName>
           </ParentModels>
           <Drivers />
           <Scripts />
